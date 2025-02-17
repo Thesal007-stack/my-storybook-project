@@ -24,6 +24,12 @@ export const Default: Story = {
     name: "Button",
   },
 };
+export const Primary: Story = {
+  args: {
+    type: "idle",
+    name: "Progress",
+  },
+};
 
 export const Group: Story = {
   render: (args) => {
