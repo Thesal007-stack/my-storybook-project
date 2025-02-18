@@ -9,7 +9,7 @@ const Button: React.FC<Props> = ({ type, name, onClick }) => {
   return (
     <button
     onClick={onClick}
-    className={`w-20 h-10 font-mono text-sm rounded-lg shadow-md ${type === 'idle'?'bg-yellow-500': type ==='success'? 'bg-green-500' : 'bg-red-500'}`}
+    className={`w-20 h-10 font-mono text-sm rounded-lg shadow-md ${type === 'idle'?'bg-yellow-500': type ==='success'? 'bg-pink-500 text-white ' : 'bg-red-500'}`}
     >
         {name}
     </button>
