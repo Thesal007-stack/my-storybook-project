@@ -3,7 +3,7 @@ import RegisterForm from "./components/register/register-form"
 const App = () => {
   return (
    <>
-   <Button type='idle' name="CLICK ME"/>
+   <Button />
    <RegisterForm/>
    </>
   )

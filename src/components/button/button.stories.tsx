@@ -1,17 +1,17 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Button from "./button";
-
+import { action } from '@storybook/addon-actions';
 export default {
   title: "Components/Button",
   component: Button,
+  tags: ['autodocs'],
   argTypes: {
     type: {
       control: { type: 'radio' },
       options: ['idle', 'success', 'error'], 
     },
-    name: {
-      control: { type: 'text' }, 
-    },
+  
+    
   },
   
 } as Meta<typeof Button>;
@@ -22,6 +22,7 @@ export const Default: Story = {
   args: {
     type: "error",
     name: "Button",
+    onClick: action('on-click')
   },
 };
 export const Primary: Story = {

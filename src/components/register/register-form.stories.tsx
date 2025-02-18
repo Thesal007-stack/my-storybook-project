@@ -4,7 +4,8 @@ import { userEvent, within } from "@storybook/test";
 
 export default {
     title: 'Components/Register',
-    component: RegisterForm
+    component: RegisterForm,
+    tags: ['autodocs']
 } as Meta<typeof RegisterForm>
 
 type Story=StoryObj <typeof RegisterForm>
@@ -14,7 +15,7 @@ export const Default:Story ={
     play: async({canvasElement}) =>{
 
         const canvas = within(canvasElement);
-
+        
         const userInput = canvas.getByLabelText('Username',{
             selector: 'input',
         })
