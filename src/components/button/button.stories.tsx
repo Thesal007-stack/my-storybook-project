@@ -10,8 +10,9 @@ export default {
       control: { type: 'radio' },
       options: ['idle', 'success', 'error'], 
     },
-  
-    
+    backgroundColor:{
+      control: 'color'
+    }
   },
   
 } as Meta<typeof Button>;
@@ -22,7 +23,8 @@ export const Default: Story = {
   args: {
     type: "error",
     name: "Button",
-    onClick: action('on-click')
+    onClick: action('on-click'),
+    backgroundColor: '#FFFFF'
   },
 };
 export const Primary: Story = {
